@@ -1,5 +1,10 @@
 <section class="cart-show">
 
+<% if enhanced_cart.empty? %>
+  <div class="alert alert-warning">
+  Your cart is empty. <a href="/">You can look through our plants here</a>
+  </div>
+<% else %>
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
@@ -48,5 +53,6 @@
       <% end %>
     </div>
   </div>
+<% end %>
 
 </section>
