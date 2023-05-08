@@ -15,10 +15,10 @@
       </thead>
       <tbody>
         <td>
-          <%= @product_count %>
+          <%= link_to @product_count, admin_products_path %>
         </td>
         <td>
-          <%= @category_count %>
+          <%= link_to @category_count, admin_categories_path %>
         </td>
       </tbody>
     </table>
