@@ -32,6 +32,9 @@ class ApplicationController < ActionController::Base
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    # If the session contrains old data that does not exist anymore
+    # Active Record will ensure that the program won't break
+    rescue ActiveRecord::RecordNotFound
   end
   helper_method :current_user
 
