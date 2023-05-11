@@ -2,8 +2,20 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
-## Setup
+## Final Product
 
+!["Screenshot of the home page while logged in"](https://github.com/SpencerHahmo/jungle-rails/blob/master/docs/home_page_logged_in.png?raw=true)
+!["screenshot of the cart"](https://github.com/SpencerHahmo/jungle-rails/blob/master/docs/non_empty_cart.png?raw=true)
+!["Screenshot of the order"](https://github.com/SpencerHahmo/jungle-rails/blob/master/docs/complete_order.png?raw=true)
+
+## Dependencies
+
+- Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
+- Bootstrap 5
+- PostgreSQL 9.x
+- Stripe
+
+## Getting Started
 1. Run `bundle install` to install dependencies
 2. Create `config/database.yml` by copying `config/database.example.yml`
 3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
@@ -22,10 +34,3 @@ If Rails is complaining about authentication to the database, uncomment the user
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
-
-## Dependencies
-
-- Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
-- Bootstrap 5
-- PostgreSQL 9.x
-- Stripe
